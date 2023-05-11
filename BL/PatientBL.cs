@@ -15,7 +15,7 @@ namespace CovidSystem.BL
         private readonly IAddPatientValidator _addPatientValidator;
         private readonly IGetPatientValidator _getPatientValidator;
 
-        public PatientBL(IPatientDL patientDL,IAddPatientValidator addPatientValidator, IGetPatientValidator getPatientValidator)//, IAddPatientValidator addUserValidator)
+        public PatientBL(IPatientDL patientDL, IAddPatientValidator addPatientValidator, IGetPatientValidator getPatientValidator)//, IAddPatientValidator addUserValidator)
         {
             _patientDL = patientDL;
             _addPatientValidator = addPatientValidator;
@@ -32,7 +32,7 @@ namespace CovidSystem.BL
             throw new NotImplementedException();
         }
 
-        ResultModel<object> IPatientBL.AddPatient(Patient patient)
+        ResultModel<object> IPatientBL.AddPatient(PatientModel patient)
         {
             var error = _addPatientValidator.Validat(patient);
 
@@ -47,7 +47,12 @@ namespace CovidSystem.BL
 
             try
             {
-                _patientDL.AddPatient(patient);
+                _patientDL.AddPatient(new Patient
+                {
+                    UserId = patient.UserId,
+                    Start = patient.Start,
+                    End = patient.End
+                });
                 return new ResultModel<object> { Success = true };
             }
             catch (Exception)
@@ -56,7 +61,7 @@ namespace CovidSystem.BL
             }
 
         }
-    
+
         ResultModel<Patient> IPatientBL.GetPatient(string id)
         {
             var error = _getPatientValidator.GetPatientValidat(id);
@@ -96,7 +101,7 @@ namespace CovidSystem.BL
                 return new ResultModel<List<Patient>>
                 {
                     Success = true,
-                    Model =_patientDL.GetPatients() //_userDL.GetUsers()
+                    Model = _patientDL.GetPatients() //_userDL.GetUsers()
                 };
             }
             catch (Exception ex)

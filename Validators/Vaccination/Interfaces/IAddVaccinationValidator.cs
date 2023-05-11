@@ -1,10 +1,11 @@
 ﻿using CovidSystem.Entities;
+using CovidSystem.Models;
 
 namespace CovidSystem.Validators.Vaccination.Interfaces
 {
     public interface IAddVaccinationValidator
     {
-        string AddVaccinationValidat(CovidSystem.Entities.Vaccination vaccination);
+        string AddVaccinationValidat(VaccinationModel vaccination);
 
     }
 }

@@ -31,7 +31,7 @@ namespace CovidSystem.Controllers
         }
 
         [HttpPost]
-        public ResultModel<object> AddVaccination(Vaccination user)
+        public ResultModel<object> AddVaccination(VaccinationModel user)
         {
             return _vaccinationBL.AddVaccination(user);
         }

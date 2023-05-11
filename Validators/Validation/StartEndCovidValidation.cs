@@ -1,4 +1,5 @@
 ﻿using CovidSystem.DL.Interfaces;
+using CovidSystem.Models;
 using CovidSystem.Validators.Validation.Interfaces;
 using System;
 
@@ -31,7 +32,7 @@ namespace CovidSystem.Validators.Validation
         }
 
 
-        public void IsStartEndCovidValid(CovidSystem.Entities.Patient patient)
+        public void IsStartEndCovidValid(PatientModel patient)
         {
             DateTime date1=patient.Start;
             DateTime date2=patient.End;

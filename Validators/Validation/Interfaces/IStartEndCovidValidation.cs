@@ -1,8 +1,10 @@
-﻿namespace CovidSystem.Validators.Validation.Interfaces
+﻿using CovidSystem.Models;
+
+namespace CovidSystem.Validators.Validation.Interfaces
 {
     public interface IStartEndCovidValidation
     {
         public bool IsValidDate(DateTime date);
-        void IsStartEndCovidValid(CovidSystem.Entities.Patient patient);
+        void IsStartEndCovidValid(PatientModel patient);
     }
 }

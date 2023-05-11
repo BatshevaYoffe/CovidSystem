@@ -22,7 +22,7 @@ namespace CovidSystem.BL
 
         }
 
-        ResultModel<object> IVaccinationBL.AddVaccination(Vaccination vaccination)
+        ResultModel<object> IVaccinationBL.AddVaccination(VaccinationModel vaccination)
         {
 
             var error = _addVaccinationValidator.AddVaccinationValidat(vaccination);
@@ -41,7 +41,13 @@ namespace CovidSystem.BL
 
             try
             {
-                _vaccinationDL.AddVaccination(vaccination);
+                _vaccinationDL.AddVaccination(new Vaccination
+                {
+                    UserId = vaccination.UserId,
+                    Date = vaccination.Date,
+                    Manufactor = vaccination.Manufactor,
+
+                });
                 return new ResultModel<object> { Success = true };
             }
             catch (Exception)

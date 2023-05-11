@@ -7,6 +7,6 @@ namespace CovidSystem.BL.Interfaces
     {
         ResultModel<List<Vaccination>> GetVaccinations();
         ResultModel<Vaccination> GetUserVaccination(string userId);
-        ResultModel<object> AddVaccination(Vaccination vaccination);
+        ResultModel<object> AddVaccination(VaccinationModel vaccination);
     }
 }

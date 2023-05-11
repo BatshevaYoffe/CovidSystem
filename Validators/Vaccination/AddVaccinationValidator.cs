@@ -1,4 +1,5 @@
-﻿using CovidSystem.Validators.Vaccination.Interfaces;
+﻿using CovidSystem.Models;
+using CovidSystem.Validators.Vaccination.Interfaces;
 using CovidSystem.Validators.Validation.Interfaces;
 
 namespace CovidSystem.Validators.Vaccination
@@ -7,7 +8,7 @@ namespace CovidSystem.Validators.Vaccination
     {
         private readonly IIdNumberValidation _idNumberValidation;
         private readonly IIsUserExistValidation _isUserExistValidation;
-        private readonly IDateValidation _dateValidation ;
+        private readonly IDateValidation _dateValidation;
 
         public AddVaccinationValidator(IIdNumberValidation idNumberValidation, IIsUserExistValidation isUserExistValidation, IDateValidation dateValidation)
         {
@@ -16,7 +17,7 @@ namespace CovidSystem.Validators.Vaccination
             _dateValidation = dateValidation;
         }
 
-        public string AddVaccinationValidat(Entities.Vaccination vaccination)
+        public string AddVaccinationValidat(VaccinationModel vaccination)
         {
             try
             {
@@ -30,7 +31,6 @@ namespace CovidSystem.Validators.Vaccination
             }
             //תקינות של כל אחד מהשדות ןהאם המשתמש קיים
             return null;
-        
-    }
+        }
     }
 }

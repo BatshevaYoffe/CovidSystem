@@ -31,7 +31,7 @@ namespace CovidSystem.Controllers
         }
 
         [HttpPost]
-        public ResultModel<object> AddPatient(Patient user)
+        public ResultModel<object> AddPatient(PatientModel user)
         {
             return _patienceBL.AddPatient(user);
         }

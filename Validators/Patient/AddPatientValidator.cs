@@ -1,4 +1,5 @@
-﻿using CovidSystem.Validators.Patient.Interfaces;
+﻿using CovidSystem.Models;
+using CovidSystem.Validators.Patient.Interfaces;
 using CovidSystem.Validators.Validation.Interfaces;
 
 namespace CovidSystem.Validators.Patient
@@ -20,7 +21,7 @@ namespace CovidSystem.Validators.Patient
             _isPatientExistValidation = isPatientExistValidation;
         }
 
-        public string Validat(Entities.Patient patient)
+        public string Validat(PatientModel patient)
         {
             try
             { 
