@@ -1,4 +1,4 @@
-## CovidSystem
+## CovidSystem מגישה בת שבע יופה 323948596
 
 # תרגיל בית מספר 2 מערכת ניהול קורונה לקופת חולים -חלק א- פיתוח מערכת
 - אופן השימוש במערכת: 
@@ -9,3 +9,4 @@
 - Microsoft.VisualStudio.Web.CodeGeneration.Design(6.0.13)
 - Swashbuckle.AspNetCore(6.2.3)
 - ולהריץ, בהצלחה! (:
+
