@@ -1,10 +1,11 @@
 ## CovidSystem
-ϊψβιμ αιϊ ξρτψ 2 ημχ ΰ- τιϊεη ξςψλϊ
-ΰετο δωιξεω αξςψλϊ: 
-ιω μδϊχιο εειζεΰμ 2022 εμδϊχιο ατψειχθ ΰϊ δηαιμεϊ δαΰεϊ:
+
+ΧªΧ¨Χ’Χ™Χ Χ‘Χ™Χª ΧΧ΅Χ¤Χ¨ 2 ΧΧΆΧ¨Χ›Χª Χ Χ™Χ”Χ•Χ Χ§Χ•Χ¨Χ•Χ Χ” ΧΧ§Χ•Χ¤Χª Χ—Χ•ΧΧ™Χ -Χ—ΧΧ§ Χ- Χ¤Χ™ΧªΧ•Χ— ΧΧΆΧ¨Χ›Χª
+ΧΧ•Χ¤Χ Χ”Χ©Χ™ΧΧ•Χ© Χ‘ΧΧΆΧ¨Χ›Χª: 
+Χ™Χ© ΧΧ”ΧªΧ§Χ™Χ Χ•Χ•Χ™Χ–Χ•ΧΧ 2022 Χ•ΧΧ”ΧªΧ§Χ™Χ Χ‘Χ¤Χ¨Χ•Χ™Χ§Χ ΧΧª Χ”Χ—Χ‘Χ™ΧΧ•Χª Χ”Χ‘ΧΧ•Χª:
 - Microsoft.EntityFrameworkCore(7.0.5)
 - Microsoft.EntityFrameworkCore.SqlServer(7.0.5)
 - Microsoft.EntityFrameworkCore.Tools(7.0.5)
 - Microsoft.VisualStudio.Web.CodeGeneration.Design(6.0.13)
 - Swashbuckle.AspNetCore(6.2.3)
-εμδψιυ
+ Χ•ΧΧ”Χ¨Χ™Χ¥, Χ‘Χ”Χ¦ΧΧ—Χ”! (:
