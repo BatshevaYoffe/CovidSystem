@@ -8,5 +8,8 @@
 - Microsoft.EntityFrameworkCore.Tools(7.0.5)
 - Microsoft.VisualStudio.Web.CodeGeneration.Design(6.0.13)
 - Swashbuckle.AspNetCore(6.2.3)
+
+יש ליצור DB ריק של SQLSRVER , ולהעתיק את המחרוזת התחברות ולהדביק במקום במחרוזת בקובץ PROGRAM בשורה 27 .
+לאחר מכן יש להריץ פקודת MIGRETION ו UPDATE-DATABASE ב PMC.
 - ולהריץ, בהצלחה! (:
 
